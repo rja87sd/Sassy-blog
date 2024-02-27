@@ -1,0 +1,62 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #cacaca;
+  text-align: center;
+}
+body h1 {
+  font-family: "Times New Roman";
+  font-size: 3.2rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: darkslategray;
+  color: #f3f3f3;
+  border: 1px solid #7a7878;
+  box-shadow: 5px 5px 5px #7a7878;
+  padding: 10px;
+  border-radius: 8px;
+  width: 400px;
+  height: auto;
+  text-align: start;
+}
+.card__header {
+  font-size: 2.5rem;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  color: #000000;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+.card__body {
+  padding: 10px;
+  font-family: Arial;
+  font-size: 1.6rem;
+}
+.card__button {
+  background-color: rgb(40, 107, 40);
+  width: 75px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card__button--cancel {
+  background-color: rgb(150, 55, 55);
+}
+.card__footer {
+  font-size: 1rem;
+  text-align: end;
+}/*# sourceMappingURL=styles.css.map */
