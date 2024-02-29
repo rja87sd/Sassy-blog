@@ -1,6 +1,5 @@
 html {
-  font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  @include font-style(Arial, 10px, 14px);
 }
 
 body {

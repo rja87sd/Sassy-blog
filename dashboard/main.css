@@ -8,6 +8,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
+  flex-direction: direction;
   padding: 0px 15px;
   background-color: #003566;
   color: #ffc300;
@@ -16,12 +18,17 @@ body {
 }
 .header__nav ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
+  flex-direction: row;
   list-style: none;
 }
 .header__nav ul a {
   color: #ffc300;
+  font-family: Arial;
   font-size: 1.5rem;
+  line-height: 1.9rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -33,9 +40,6 @@ body {
 .main-content {
   margin-top: 120px;
   margin-left: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
   padding: 15px;
   padding-top: 0;
@@ -48,8 +52,10 @@ body {
 .main-content__card-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .main-content__card {
   background-color: #001d3d;
@@ -62,18 +68,56 @@ body {
   text-align: start;
 }
 
+.card-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-direction: direction;
+}
+
+.card-btn {
+  background-color: #003566;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: auto;
+  cursor: pointer;
+}
+.card-btn:hover {
+  background-color: #001b33;
+}
+.card-btn--delete {
+  background-color: #d37f00;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: auto;
+  cursor: pointer;
+}
+.card-btn--delete:hover {
+  background-color: #a06000;
+}
+
 .footer {
-  margin-top: 200px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: row;
+  margin-top: 200px;
   height: 4rem;
   background-color: #003566;
   color: #ffc300;
 }
 
 html {
+  font-family: Arial;
   font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  line-height: 14px;
 }
 
 body {

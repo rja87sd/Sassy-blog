@@ -1,0 +1,47 @@
+@mixin flex-layout($direction: row){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: $direction;
+}
+
+@mixin flex-layout-alt($direction: row){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-direction: direction;
+}
+
+@mixin button-style($backgroundColor, $fontSize: 16px){
+    background-color: $backgroundColor;
+    border: none;
+    padding: 10px 15px;
+    font-size: $fontSize;
+    border-radius: 5px;
+    width: auto;
+    cursor: pointer;
+    &:hover{
+        background-color: darken($backgroundColor, 10%);
+    }
+    &--delete{
+        background-color: #d37f00;
+        color: black;
+        border: none;
+        padding: 10px 15px;
+        font-size: $fontSize;
+        border-radius: 5px;
+        width: auto;
+        cursor: pointer;
+        &:hover{
+            background-color: darken(#d37f00, 10%);
+        }
+    }
+}
+
+@mixin font-style($fontFamily, $fontSize, $lineHeight){
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}

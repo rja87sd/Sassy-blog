@@ -1,13 +1,14 @@
 body {
-  background-image: linear-gradient(#ff2407, #ffbf10); // Color gradient courtesy of w3schools.com
+  background-image: linear-gradient(
+    #ff2407,
+    #ffbf10
+  ); // Color gradient courtesy of w3schools.com
   height: 100vw;
   margin: 0;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-layout-alt;
   padding: 0px 15px;
   background-color: $background-secondary;
   color: $text-primary;
@@ -15,12 +16,11 @@ body {
   box-shadow: 5px 5px 5px $box-shadow-color;
   &__nav {
     ul {
-      display: flex;
-      gap: 15px;
+      @include flex-layout;
       list-style: none;
       a {
         color: $text-primary;
-        font-size: 1.5rem;
+        @include font-style(Arial, 1.5rem, 1.9rem);
         font-weight: bold;
         text-decoration: none;
         &:hover {
@@ -35,9 +35,6 @@ body {
 .main-content {
   margin-top: 120px;
   margin-left: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
   padding: 15px;
   padding-top: 0;
@@ -46,30 +43,34 @@ body {
   background-color: $background-secondary;
   color: $text-primary;
   box-shadow: 5px 5px 5px $box-shadow-color;
-  &__card-container{
-    display: flex;
-    justify-content: center;
+  &__card-container {
+    @include flex-layout;
     flex-wrap: wrap;
-    gap: 15px;
   }
-  &__card{
-  background-color: $background-accent;
-  border: 1px solid $border-color;
-  box-shadow: 5px 5px 5px $box-shadow-secondary-color;
-  padding: 10px;
-  border-radius: 8px;
-  width: auto;
-  height: auto;
-  text-align: start;
+  &__card {
+    background-color: $background-accent;
+    border: 1px solid $border-color;
+    box-shadow: 5px 5px 5px $box-shadow-secondary-color;
+    padding: 10px;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    text-align: start;
   }
-
 }
 
-.footer{
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    height: 4rem;
-    background-color: $background-secondary;
-    color: $text-primary;
+.card-btn-container{
+    @include flex-layout-alt
+}
+
+.card-btn{
+    @include button-style($primary-color);
+}
+
+.footer {
+  @include flex-layout;
+  margin-top: 200px;
+  height: 4rem;
+  background-color: $background-secondary;
+  color: $text-primary;
 }
