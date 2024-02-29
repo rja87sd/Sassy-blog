@@ -1,0 +1,75 @@
+body {
+  background-image: linear-gradient(#ff2407, #ffbf10); // Color gradient courtesy of w3schools.com
+  height: 100vw;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  background-color: $background-secondary;
+  color: $text-primary;
+  border: 1px solid $border-color;
+  box-shadow: 5px 5px 5px $box-shadow-color;
+  &__nav {
+    ul {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      a {
+        color: $text-primary;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+          color: $link-hover-color;
+          transition: color 0.2s ease;
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  margin-top: 120px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 15px;
+  padding-top: 0;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  background-color: $background-secondary;
+  color: $text-primary;
+  box-shadow: 5px 5px 5px $box-shadow-color;
+  &__card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  &__card{
+  background-color: $background-accent;
+  border: 1px solid $border-color;
+  box-shadow: 5px 5px 5px $box-shadow-secondary-color;
+  padding: 10px;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  text-align: start;
+  }
+
+}
+
+.footer{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    background-color: $background-secondary;
+    color: $text-primary;
+}
