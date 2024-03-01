@@ -1,12 +1,17 @@
-*{
+/* Global Reset and Root Styles with Comments by ChatGPT */
+
+/* Apply border-box sizing to all elements */
+* {
     box-sizing: border-box;
 }
 
-:root{
-    font-size: 10px;
+/* Set the base font size for responsive scaling */
+:root {
+    font-size: 10px; /* Base font size of 10px */
 }
 
-body{
-    font-size: 1.6rem;
-    margin: 0;
+/* Body styles */
+body {
+    font-size: 1.6rem; /* Equivalent to 16px (10px * 1.6) */
+    margin: 0; /* Remove default margin */
 }

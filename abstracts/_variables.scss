@@ -1,3 +1,5 @@
+// SCSS Variables with Comments by ChatGPT
+
 // Primary Colors
 $primary-color: #ff0000;         // Red
 $secondary-color: #ffffff;       // White
@@ -14,8 +16,8 @@ $background-secondary: #333333;  // Dark gray
 $background-accent: #1a1a1a;     // Darker gray
 
 // Utility Colors
-$link-color: $primary-color;
-$link-hover-color: darken($text-primary, 10%);
-$border-color: #ffffff;           // White
-$box-shadow-color: #ff0000;       // Red
-$box-shadow-secondary-color: #000000; // Black
+$link-color: $primary-color;                 // Link color
+$link-hover-color: darken($text-primary, 10%);  // Link hover color (10% darker)
+$border-color: #ffffff;           // White (for borders)
+$box-shadow-color: #ff0000;       // Red (for box shadows)
+$box-shadow-secondary-color: #000000; // Black (for secondary box shadows)

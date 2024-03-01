@@ -1,50 +1,68 @@
+<!-- HTML Content for Dashboard Page with Comments by ChatGPT -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Meta information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
     <title>Week 8 Day 2 Assignment | SCSS Modularization</title>
+    <!-- Link to the external stylesheet -->
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <!-- Header section -->
     <header class="header">
+        <!-- Title of the dashboard -->
         <h1>
             My Dashboard
         </h1>
+        <!-- Navigation bar -->
         <nav class="header__nav">
             <ul>
+                <!-- List of navigation links -->
                 <li class="header__link"><a href="index.html">Home</a></li>
                 <li class="header__link--about"><a href="#">About</a></li>
-                <li class="header__link--dashboard"><a
-                        href="#">Dashboard</a></li>
+                <li class="header__link--dashboard"><a href="#">Dashboard</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main content section -->
     <main class="dashboard-content">
+        <!-- Section title -->
         <h2>Recent Posts</h2>
 
+        <!-- Container for recent posts -->
         <section class="main-content__card-container">
 
+            <!-- Individual post cards -->
             <div class="main-content__card">
+                <!-- Post title -->
                 <h3>
                     Recent Post 1
                 </h3>
+                <!-- Post content -->
                 <p>
                     This is where a snippet of post goes.
                 </p>
+                <!-- Button container for each card -->
                 <section class="card__btn-container">
+                    <!-- View button -->
                     <div class="card-btn">
                         View
                     </div>
+                    <!-- Delete button -->
                     <div class="card-btn--delete">
                         Delete
                     </div>
                 </section>
             </div>
 
+            <!-- Repeat for other post cards -->
             <div class="main-content__card">
                 <h3>
                     Recent Post 2
@@ -81,7 +99,9 @@
         </section>
     </main>
 
+    <!-- Footer section -->
     <footer class="footer">
+        <!-- Footer content -->
         <h5>
             © Ryan Arnold 2024 | Email: example@email.com | Phone: 1 (234) 567-8901
         </h5>

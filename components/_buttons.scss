@@ -1,3 +1,6 @@
+// Button Styles with comments by ChatGPT.
+
+/* Apply button style to elements with class .card-btn */
 .card-btn {
-  @include button-style($primary-color);
+  @include button-style($primary-color); /* Include button style mixin with primary color */
 }

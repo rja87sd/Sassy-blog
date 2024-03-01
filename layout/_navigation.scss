@@ -1,22 +1,27 @@
+// Navigation Styles with Comments by ChatGPT
+
+// Styles for the header element
 .header {
-  @include flex-layout-alt;
-  padding: 0px 15px;
-  background-color: $background-secondary;
-  color: $text-primary;
-  border: 1px solid $border-color;
-  box-shadow: 5px 5px 5px $box-shadow-color;
+  @include flex-layout-alt; // Include flex layout mixin with alternate settings
+  padding: 0px 15px; // Set padding
+  background-color: $background-secondary; // Set background color
+  color: $text-primary; // Set text color
+  border: 1px solid $border-color; // Apply border
+  box-shadow: 5px 5px 5px $box-shadow-color; // Apply box shadow
+
+  // Styles for the nested navigation element
   &__nav {
     ul {
-      @include flex-layout;
-      list-style: none;
+      @include flex-layout; // Include flex layout mixin
+      list-style: none; // Remove list style
       a {
-        color: $text-primary;
-        @include font-style(Arial, 1.5rem, 1.9rem);
-        font-weight: bold;
-        text-decoration: none;
-        &:hover {
-          color: $link-hover-color;
-          transition: color 0.2s ease;
+        color: $text-primary; // Set link text color
+        @include font-style(Arial, 1.5rem, 1.9rem); // Include font style mixin
+        font-weight: bold; // Set font weight to bold
+        text-decoration: none; // Remove text decoration
+        &:hover { // Hover effect for links
+          color: $link-hover-color; // Change text color on hover
+          transition: color 0.2s ease; // Smooth transition effect
         }
       }
     }

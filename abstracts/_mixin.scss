@@ -1,47 +1,53 @@
+// SCSS Mixins with Comments by ChatGPT
+
+// Mixin for creating a flex layout with customizable direction
 @mixin flex-layout($direction: row){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    flex-direction: $direction;
+    display: flex;                   // Use flex display
+    justify-content: center;         // Horizontally center items
+    align-items: center;             // Vertically center items
+    gap: 15px;                       // Spacing between flex items
+    flex-direction: $direction;      // Direction of flex layout (default: row)
 }
 
+// Mixin for creating a flex layout with space between items
 @mixin flex-layout-alt($direction: row){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    flex-direction: direction;
+    display: flex;                   // Use flex display
+    justify-content: space-between;  // Distribute items evenly with space between them
+    align-items: center;             // Vertically center items
+    gap: 15px;                       // Spacing between flex items
+    flex-direction: direction;       // Direction of flex layout (default: row)
 }
 
+// Mixin for styling buttons with customizable background color and font size
 @mixin button-style($backgroundColor, $fontSize: 16px){
-    background-color: $backgroundColor;
-    border: none;
-    padding: 10px 15px;
-    font-size: $fontSize;
-    border-radius: 5px;
-    width: auto;
-    cursor: pointer;
-    &:hover{
-        background-color: darken($backgroundColor, 10%);
+    background-color: $backgroundColor;  // Set background color
+    border: none;                        // Remove border
+    padding: 10px 15px;                  // Set padding
+    font-size: $fontSize;                // Set font size (default: 16px)
+    border-radius: 5px;                  // Apply border radius
+    width: auto;                         // Adjust width automatically
+    cursor: pointer;                     // Set cursor to pointer for interactivity
+    &:hover{                             // Hover effect
+        background-color: darken($backgroundColor, 10%);  // Darken background color on hover
     }
-    &--delete{
-        background-color: #d37f00;
-        color: black;
-        border: none;
-        padding: 10px 15px;
-        font-size: $fontSize;
-        border-radius: 5px;
-        width: auto;
-        cursor: pointer;
-        &:hover{
-            background-color: darken(#d37f00, 10%);
+    &--delete{                           // Additional styling for delete buttons
+        background-color: #d37f00;       // Background color for delete buttons
+        color: black;                    // Text color for delete buttons
+        border: none;                    // Remove border
+        padding: 10px 15px;              // Set padding
+        font-size: $fontSize;            // Set font size (default: 16px)
+        border-radius: 5px;              // Apply border radius
+        width: auto;                     // Adjust width automatically
+        cursor: pointer;                 // Set cursor to pointer for interactivity
+        &:hover{                         // Hover effect for delete buttons
+            background-color: darken(#d37f00, 10%);  // Darken background color on hover
         }
     }
 }
 
+// Mixin for styling fonts with customizable font family, size, and line height
 @mixin font-style($fontFamily, $fontSize, $lineHeight){
-    font-family: $fontFamily;
-    font-size: $fontSize;
-    line-height: $lineHeight;
+    font-family: $fontFamily;   // Set font family
+    font-size: $fontSize;       // Set font size
+    line-height: $lineHeight;   // Set line height
 }

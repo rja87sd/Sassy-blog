@@ -1,40 +1,50 @@
+// Dashboard Content Styles with Comments by ChatGPT
+
+// Styles for the dashboard content
 .dashboard-content {
-  margin-left: 15px;
-  margin-top: 120px;
-  width: 50%;
-  padding: 15px;
-  padding-top: 0;
-  border: 1px solid $border-color;
-  border-radius: 8px;
-  background-color: $background-secondary;
-  color: $text-primary;
-  box-shadow: 5px 5px 5px $box-shadow-color;
+  margin-left: 15px; // Set left margin
+  margin-top: 120px; // Set top margin
+  width: 50%; // Set width
+  padding: 15px; // Set padding
+  padding-top: 0; // Remove top padding
+  border: 1px solid $border-color; // Apply border
+  border-radius: 8px; // Apply border radius
+  background-color: $background-secondary; // Set background color
+  color: $text-primary; // Set text color
+  box-shadow: 5px 5px 5px $box-shadow-color; // Apply box shadow
+  
+  // Styles for the card container within dashboard content
   &__card-container {
-    @include flex-layout;
-    flex-wrap: wrap;
+    @include flex-layout; // Include flex layout mixin
+    flex-wrap: wrap; // Allow flex items to wrap
   }
+  
+  // Styles for individual cards within dashboard content
   &__card {
-    background-color: $background-accent;
-    border: 1px solid $border-color;
-    box-shadow: 5px 5px 5px $box-shadow-secondary-color;
-    padding: 10px;
-    border-radius: 8px;
-    width: 500px;
-    height: auto;
-    text-align: start;
-    gap: 15px;
+    background-color: $background-accent; // Set card background color
+    border: 1px solid $border-color; // Apply border
+    box-shadow: 5px 5px 5px $box-shadow-secondary-color; // Apply box shadow
+    padding: 10px; // Set padding
+    border-radius: 8px; // Apply border radius
+    width: 500px; // Set width
+    height: auto; // Set height to auto
+    text-align: start; // Set text alignment to start
+    gap: 15px; // Set gap between elements
+    
+    // Styles for ordered lists within cards
     ol {
       li {
-        margin: 10px 0px;
+        margin: 10px 0px; // Set margin for list items
       }
     }
   }
 }
 
+// Styles for the footer
 .footer {
-  @include flex-layout;
-  margin-top: 300px;
-  height: 4rem;
-  background-color: $background-secondary;
-  color: $text-primary;
+  @include flex-layout; // Include flex layout mixin
+  margin-top: 300px; // Set top margin
+  height: 4rem; // Set height
+  background-color: $background-secondary; // Set background color
+  color: $text-primary; // Set text color
 }
