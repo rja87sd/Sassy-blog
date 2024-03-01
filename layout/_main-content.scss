@@ -4,31 +4,6 @@ body {
   margin: 0;
 }
 
-.header {
-  @include flex-layout-alt;
-  padding: 0px 15px;
-  background-color: $background-secondary;
-  color: $text-primary;
-  border: 1px solid $border-color;
-  box-shadow: 5px 5px 5px $box-shadow-color;
-  &__nav {
-    ul {
-      @include flex-layout;
-      list-style: none;
-      a {
-        color: $text-primary;
-        @include font-style(Arial, 1.5rem, 1.9rem);
-        font-weight: bold;
-        text-decoration: none;
-        &:hover {
-          color: $link-hover-color;
-          transition: color 0.2s ease;
-        }
-      }
-    }
-  }
-}
-
 .main-content {
   margin: auto;
   margin-top: 120px;
@@ -59,18 +34,17 @@ body {
         margin: 10px 0px;
       }
     }
-    .card-header{
+    .card-header {
       color: $text-secondary;
     }
+    .card__btn-container {
+      @include flex-layout-alt;
+    }
+
+    .card__footer {
+      @include flex-layout;
+    }
   }
-}
-
-.card__btn-container {
-  @include flex-layout-alt;
-}
-
-.card__footer {
-  @include flex-layout;
 }
 
 .footer {

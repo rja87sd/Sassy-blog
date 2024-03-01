@@ -70,12 +70,6 @@ h6 {
   background-color: #a06000;
 }
 
-body {
-  background-color: #000000;
-  height: auto;
-  margin: 0;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -107,6 +101,12 @@ body {
 .header__nav ul a:hover {
   color: #e6e6e6;
   transition: color 0.2s ease;
+}
+
+body {
+  background-color: #000000;
+  height: auto;
+  margin: 0;
 }
 
 .main-content {
@@ -146,16 +146,14 @@ body {
 .main-content__card .card-header {
   color: #636363;
 }
-
-.card__btn-container {
+.main-content__card .card__btn-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
   flex-direction: direction;
 }
-
-.card__footer {
+.main-content__card .card__footer {
   display: flex;
   justify-content: center;
   align-items: center;

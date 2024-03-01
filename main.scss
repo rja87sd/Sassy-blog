@@ -1,5 +1,5 @@
 // Abstracts
-@import 'abstracts/mixin';
+@import "abstracts/mixin";
 @import "abstracts/variables";
 
 // Base
@@ -7,10 +7,11 @@
 @import "base/typography";
 
 // Components
-@import 'components/buttons';
+@import "components/buttons";
 
 // Layout
+@import "layout/navigation";
 @import "layout/main-content";
 
 // Pages
-@import 'pages/dashboard';
+@import "pages/dashboard";
