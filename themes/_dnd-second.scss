@@ -1,0 +1,21 @@
+// Primary Colors
+$primary-color: #2c3e50;         // Dark blue
+$secondary-color: #bdc3c7;       // Silver
+$accent-color: #d35400;          // Rusty orange
+
+// Text Colors
+$text-primary: #d35400;          // Rusty orange
+$text-secondary: #3498db;        // Blue
+$text-inverse: #ffffff;          // White
+
+// Background Colors
+$background-primary: #16a085;    // Green
+$background-secondary: #2c3e50;  // Dark blue
+$background-accent: #bdc3c7;     // Silver
+
+// Utility Colors
+$link-color: $primary-color;
+$link-hover-color: darken($text-primary, 10%);
+$border-color: #000000;
+$box-shadow-color: #d35400;       // Rusty orange
+$box-shadow-secondary-color: #000000;

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 Day 2 Assignment | SCSS Modularization</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>
+            My Dashboard
+        </h1>
+        <nav class="header__nav">
+            <ul>
+                <li class="header__link"><a href="index.html">Home</a></li>
+                <li class="header__link--about"><a href="#">About</a></li>
+                <li class="header__link--dashboard"><a
+                        href="#">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-content">
+        <h2>Recent Posts</h2>
+
+        <section class="main-content__card-container">
+
+            <div class="main-content__card">
+                <h3>
+                    Recent Post 1
+                </h3>
+                <p>
+                    This is where a snippet of post goes.
+                </p>
+                <section class="card__btn-container">
+                    <div class="card-btn">
+                        View
+                    </div>
+                    <div class="card-btn--delete">
+                        Delete
+                    </div>
+                </section>
+            </div>
+
+            <div class="main-content__card">
+                <h3>
+                    Recent Post 2
+                </h3>
+                <p>
+                    This is where a snippet of post goes.
+                </p>
+                <section class="card__btn-container">
+                    <div class="card-btn">
+                        View
+                    </div>
+                    <div class="card-btn--delete">
+                        Delete
+                    </div>
+                </section>
+            </div>
+
+            <div class="main-content__card">
+                <h3>
+                    Recent Post 3
+                </h3>
+                <p>
+                    This is where a snippet of post goes.
+                </p>
+                <section class="card__btn-container">
+                    <div class="card-btn">
+                        View
+                    </div>
+                    <div class="card-btn--delete">
+                        Delete
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h5>
+            &copy; 2024 Some Company
+        </h5>
+    </footer>
+</body>
+
+</html>

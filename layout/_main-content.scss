@@ -1,9 +1,6 @@
 body {
-  background-image: linear-gradient(
-    #ff2407,
-    #ffbf10
-  ); // Color gradient courtesy of w3schools.com
-  height: 100vw;
+  background-color: $background-primary;
+  height: auto;
   margin: 0;
 }
 
@@ -33,9 +30,9 @@ body {
 }
 
 .main-content {
+  margin: auto;
   margin-top: 120px;
-  margin-left: 5px;
-  width: 50%;
+  width: 90%;
   padding: 15px;
   padding-top: 0;
   border: 1px solid $border-color;
@@ -53,18 +50,27 @@ body {
     box-shadow: 5px 5px 5px $box-shadow-secondary-color;
     padding: 10px;
     border-radius: 8px;
-    width: auto;
+    width: 500px;
     height: auto;
     text-align: start;
+    gap: 15px;
+    ol {
+      li {
+        margin: 10px 0px;
+      }
+    }
+    .card-header{
+      color: $text-secondary;
+    }
   }
 }
 
-.card-btn-container{
-    @include flex-layout-alt
+.card__btn-container {
+  @include flex-layout-alt;
 }
 
-.card-btn{
-    @include button-style($primary-color);
+.card__footer {
+  @include flex-layout;
 }
 
 .footer {

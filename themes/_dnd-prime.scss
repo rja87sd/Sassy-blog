@@ -1,0 +1,21 @@
+// Primary Colors
+$primary-color: #ff0000;         // Red
+$secondary-color: #ffffff;       // White
+$accent-color: #ff0000;          // Red
+
+// Text Colors
+$text-primary: #ffffff;          // White
+$text-secondary: #636363;        // Light gray
+$text-inverse: #000000;          // Black
+
+// Background Colors
+$background-primary: #000000;    // Black
+$background-secondary: #333333;  // Dark gray
+$background-accent: #1a1a1a;     // Darker gray
+
+// Utility Colors
+$link-color: $primary-color;
+$link-hover-color: darken($text-primary, 10%);
+$border-color: #ffffff;           // White
+$box-shadow-color: #ff0000;       // Red
+$box-shadow-secondary-color: #000000; // Black
